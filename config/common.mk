@@ -417,6 +417,11 @@ endif
 # Audio files
 $(call inherit-product, vendor/infinity/audio/audio.mk)
 
+# SetupWizard
+PRODUCT_PRODUCT_PROPERTIES += \
+    setupwizard.theme=glif_expressive \
+    setupwizard.feature.day_night_mode_enabled=true
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/infinity/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/infinity/overlay/common \
